@@ -28,6 +28,8 @@ const NewRecipeScreen = () => {
 const onSubmit = (values) => {
   values.ingredients = ingredients;
     console.log(values)
+    axios
+    .post(`https://recipes.devmountain.com/recipes`, values)
 }
 
   return (
@@ -110,7 +112,9 @@ const onSubmit = (values) => {
             placeholder="What are the instructions?"
             name="instructions" 
             value={values.instructions}
-            rows="5"/>
+            rows="5"
+            onChange={handleChange}
+          />
           <button
             type="submit"
             className="instructionBtn">
