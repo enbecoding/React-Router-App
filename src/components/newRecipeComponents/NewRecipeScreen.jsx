@@ -38,7 +38,7 @@ const onSubmit = (values) => {
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
           {({ values, handleChange, handleSubmit }) => (
         <form onSubmit={handleSubmit}>
-          <div className="inputContainer">
+          <div className={style.inputContainer}>
             <input 
               type="text" 
               placeholder="Name "
@@ -52,7 +52,7 @@ const onSubmit = (values) => {
               onChange={handleChange}
               name="imageURL"/>
           </div>
-          <div className="radioBtnContainer">
+          <div className={style.radioBtnContainer}>
             <input 
               type="radio"
               value="Cook"
@@ -72,7 +72,7 @@ const onSubmit = (values) => {
               />
             <p>Drink</p>
           </div>
-          <div className="inputContainer">
+          <div className={style.inputContainer}>
             <input 
               type="text" 
               placeholder="Prep Time"
@@ -92,7 +92,7 @@ const onSubmit = (values) => {
               onChange={handleChange}
               name="serves"/>
           </div>
-          <div className="inputContainer">
+          <div className={style.inputContainer}>
             <input 
               type="text" 
               placeholder="Ingredient"
@@ -103,7 +103,7 @@ const onSubmit = (values) => {
               />
           </div>
           <button
-            className="recipeBtn"
+            className={style.recipeBtn}
             onClick={addIngredient}
           >
           Add Another
@@ -114,10 +114,12 @@ const onSubmit = (values) => {
             value={values.instructions}
             rows="5"
             onChange={handleChange}
+            
           />
           <button
             type="submit"
-            className="instructionBtn">
+            className={style.instructionBtn}
+            onSubmit={handleSubmit}>
             Save
           </button>
         </form>

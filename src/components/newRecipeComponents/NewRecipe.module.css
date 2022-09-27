@@ -15,6 +15,44 @@ form {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  height: fit-content;
+  margin-top: 10px;
+  width: 55vw;
+}
+form input {
+  font-size: 15px;
+
 }
 
+.radioBtnContainer {
+  display: flex;
+  gap: 10px
+}
 
+textarea {
+  width: 75%;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.recipeBtn {
+  background-color: rgb(248, 147, 79);;
+  color: white;
+  border-style: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 7px;
+}
+
+.instructionBtn {
+  background-color: rgb(67, 170, 144);
+  color: white;
+  border-style: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 7px;
+}
