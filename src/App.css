@@ -23,14 +23,4 @@ time, mark, audio, video {
 /* --------- Begin your CSS Below here --------- */
 
 
-.navbtn {
-	border-style: none;
-	background-color: rgb(248, 147, 79);
-	color:white;
-}
-
-
-.navbtn:hover {
-	background-color: rgb(179, 104, 54);
-}
 

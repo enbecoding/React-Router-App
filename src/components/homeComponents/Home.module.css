@@ -39,5 +39,15 @@ h1{
   display: flex;
   gap: 20px;
   justify-content: center;
-  
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.bluebtn {
+  background-color: rgb(67, 170, 144);
+  color: white;
+  border-style: none;
+  width: 100px;
+  margin-left: 0px;
+  height: 40px;
 }

@@ -6,6 +6,7 @@
   text-align: center;
   justify-content: space-evenly;
   border-radius: 4px;
+  box-shadow: 0px 0px 0.3px black;
 }
 
 .recipeImgContainer {
@@ -18,4 +19,13 @@ img {
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+
+.bluebtn {
+  background-color: rgb(67, 170, 144);
+  color: white;
+  border-style: none;
+  width: 100px;
+  margin-left: 50px;
+  height: 40px;
 }

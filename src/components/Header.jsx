@@ -8,10 +8,10 @@ const Header = () => {
       <h2>Devmountain Eatery</h2>
       <nav>
         <Link to="">
-          <button className="navbtn">Home</button>
+          <button className={styles.navbtn}>Home</button>
         </Link>
         <Link to="/newRecipe">
-          <button className="navbtn">Add Recipe</button>
+          <button className={styles.navbtn}>Add Recipe</button>
         </Link>
       </nav>
     </header>
